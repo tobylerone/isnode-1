@@ -1,3 +1,3 @@
-(function() {
-  module.exports = !(typeof window !== "undefined" && window !== null);
-}).call(this);
+function isNode() {
+  return typeof window !== "undefined" && window !== null && typeof module !== 'undefined' && module.exports;
+};
